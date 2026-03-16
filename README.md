@@ -2,10 +2,10 @@
 
 The following instructions are for building containers on a mac.
 
-1 On your mac, install a virtual machine running ubuntu and install aptainer
-2 Write the apptainer definition file using an ubuntu operating system as on the HPC
-3 Build he container locally
-4 Copy to server and use
+1. On your mac, install a virtual machine running ubuntu and install aptainer
+2. Write the apptainer definition file using an ubuntu operating system as on the HPC
+3. Build he container locally
+4. Copy to server and use
 
 ## Apptainer on mac
 
