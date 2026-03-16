@@ -41,7 +41,7 @@ To ssh into vm from mac terminal, you need to type: `username@vm_ip`, e.g. `jenn
    sudo apt install openssh-server
    ```
 
-5. enable ssh manually: `sudo systemctl start ssh
+5. Enable ssh manually: `sudo systemctl start ssh`
 6. Make sure ssh is enabled at boot `sudo systemctl enable ssh`
 7. use `ip a` to list ip.
 
