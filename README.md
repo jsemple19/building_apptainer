@@ -35,12 +35,15 @@ To ssh into vm from mac terminal, you need to type: `username@vm_ip`, e.g. `jenn
 
 1. start your VM and login.
 2. Check status with `systemctl status ssh` - it should say "active (running)".
-3. Be sure ssh is installed: `sudo apt update
-sudo apt install openssh-server`
+3. Be sure ssh is installed:
+   ```
+   sudo apt update
+   sudo apt install openssh-server
+   ```
 
-4. enable ssh manually: `sudo systemctl start ssh
-5. Make sure ssh is enabled at boot `sudo systemctl enable ssh`
-6. use `ip a` to list ip.
+5. enable ssh manually: `sudo systemctl start ssh
+6. Make sure ssh is enabled at boot `sudo systemctl enable ssh`
+7. use `ip a` to list ip.
 
 ### installing apptainer in vm
 ```
