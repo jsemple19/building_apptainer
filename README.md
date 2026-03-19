@@ -12,10 +12,9 @@ The following instructions are for building containers on a mac.
 ### Installing ubuntu VM on UTM
 
 1. [UTM](https://mac.getutm.app) is a free software for virtul machines on mac. Download and install it.
-2. Download [ubuntu server](https://ubuntu.com/download/server/arm)
-
-3. Create an ubuntu virtual machine on UTM:  Create a new Virtual Machine > Virtualize > Linux
-4. Suggested specs:
+2. Download [ubuntu server](https://ubuntu.com/download/server). Make sure to get the version suitable for AMD, not ARM architecture.
+4. Create an ubuntu virtual machine on UTM:  Create a new Virtual Machine > Emulate > Linux, then make sure to select x64 architecture.
+5. Suggested specs:
   - 6-12Gb RAM
   - 4-6 cores
   - Boot from ISO image (the Ubuntu file you downloaded),
