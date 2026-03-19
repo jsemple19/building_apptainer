@@ -54,4 +54,38 @@ export VERSION=1.4.5
 wget https://github.com/apptainer/apptainer/releases/download/v${VERSION}/apptainer_${VERSION}_amd64.deb
 sudo apt install ./apptainer_${VERSION}_amd64.deb
 ```
+## creating def file for your software
+
+In the header you must specify the same ubuntu as on the server:
+
+```
+Bootstrap: docker
+From: ubuntu:24.04
+```
+Try asking microsoft copilot to create def for you based on installation instructions.
+
+### convert build container from .def file
+
+```
+sudo apptainer build deconwolf.sif deconwolf.def
+```
+
+### test it
+```
+sudo apptainer exec deconwolf.sif dw --help
+```
+
+### copy container to mac and then to server
+From the mac terminal (not ssh'd into the UTM) go to the folder where you want the .sif file and type:
+```
+scp jenny@192.168.64.4:/home/jenny/deconwolf.sif ./
+```
+
+### run container with gpu support
+```
+apptainer exec --nv deconwolf.sif dw --help
+```
+
+
+
 
