@@ -63,10 +63,12 @@ To ssh into vm from mac terminal, you need to type: `username@vm_ip`, e.g. `jenn
 ```
 sudo apt update
 sudo apt install -y build-essential libseccomp-dev pkg-config squashfs-tools cryptsetup runc uidmap
+sudo apt install apptainer
 
-export VERSION=1.4.5
-wget https://github.com/apptainer/apptainer/releases/download/v${VERSION}/apptainer_${VERSION}_amd64.deb
-sudo apt install ./apptainer_${VERSION}_amd64.deb
+# alternative manual install (not necessary)
+#export VERSION=1.4.5
+#wget https://github.com/apptainer/apptainer/releases/download/v${VERSION}/apptainer_${VERSION}_amd64.deb
+#sudo apt install ./apptainer_${VERSION}_amd64.deb
 ```
 ## creating def file for your software
 
