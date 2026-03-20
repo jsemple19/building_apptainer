@@ -25,7 +25,22 @@ The following instructions are for building containers on a mac.
 
 5. When finished - reboot. You might find that reboot just starts the installation all over again, in which case in UTM click on the VM, and then click on the button at the top right (edit VM) and disconnect the .iso file from the drives.
 6. to turn off the VM, type `sudo poweroff`.
-7. Note: UTM virtualization does not allow sharing clipboard sharing, which is annoying when cutting pasting commands, but you can ssh into the VM from a mac terminal, and this allows you to copy paste.
+7. you want to allow clipboard sharing (only in emulate and not virtualize mode) so you can cut and paste commands from outside the VM. Setting it up didn't work for me but you can ssh into the VM from a mac terminal, and this allows you to copy paste.
+
+### sharing clipboard with VM
+Make sure that sharing clipboard is enabled by closing your VM, and choosing edit at the top right courner of UMT. Choose Sharing from the menu.
+
+Install SPICE guest tools inside the VM:
+
+```
+sudo apt update
+sudo apt install spice-vdagent
+```
+reboot the VM:
+```
+reboot
+```
+this didn't work for me. 
 
 
 ### ssh into VM
