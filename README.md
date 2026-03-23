@@ -78,7 +78,13 @@ In the header you must specify the same ubuntu as on the server:
 Bootstrap: docker
 From: ubuntu:24.04
 ```
-If you want a container that can work with gpus you need to get it from [nvidia](https://hub.docker.com/r/nvidia/cuda/tags).
+
+If you want a container that can work with gpus you need to get it from [nvidia](https://hub.docker.com/r/nvidia/cuda/tags). Then the header would be:
+
+```
+Bootstrap: docker
+From: nvidia/cuda:13.2.0-cudnn-runtime-ubuntu24.04
+```
 
 Try asking microsoft copilot to create def for you based on installation instructions. 
 
