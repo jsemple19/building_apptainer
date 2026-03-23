@@ -12,7 +12,7 @@ The following instructions are for building containers on a mac.
 ### Installing ubuntu VM on UTM
 
 1. [UTM](https://mac.getutm.app) is a free software for virtul machines on mac. Download and install it.
-2. Download [ubuntu server](https://ubuntu.com/download/server). Make sure to get the version suitable for AMD, not ARM architecture. If you want a container that can work with gpus you need to get it from [nvidia](https://hub.docker.com/r/nvidia/cuda/tags).
+2. Download [ubuntu server](https://ubuntu.com/download/server). Make sure to get the version suitable for AMD, not ARM architecture. 
 4. Create an ubuntu virtual machine on UTM:  Create a new Virtual Machine > Emulate > Linux, then make sure to select x64 architecture.
 5. Suggested specs:
   - 6-12Gb RAM
@@ -78,7 +78,9 @@ In the header you must specify the same ubuntu as on the server:
 Bootstrap: docker
 From: ubuntu:24.04
 ```
-Try asking microsoft copilot to create def for you based on installation instructions.
+If you want a container that can work with gpus you need to get it from [nvidia](https://hub.docker.com/r/nvidia/cuda/tags).
+
+Try asking microsoft copilot to create def for you based on installation instructions. 
 
 ### convert build container from .def file
 
