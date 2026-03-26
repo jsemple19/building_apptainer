@@ -25,7 +25,7 @@ The following instructions are for building containers on a mac.
 ![creating UTM VM](/UMT_UbuntuArchVMsetup.png)
 
 5. When finished - reboot. You might find that reboot just starts the installation all over again, in which case in UTM click on the VM, and then click on the button at the top right (edit VM) and disconnect the .iso file from the drives.
-![UMT drive disconnect] (/UMT_driveImage.png)
+![UMT drive disconnect](/UMT_driveImage.png)
 7. to turn off the VM, type `sudo poweroff`.
 8. you want to allow clipboard sharing (only in emulate and not virtualize mode) so you can cut and paste commands from outside the VM. Setting it up didn't work for me but you can ssh into the VM from a mac terminal, and this allows you to copy paste.
 
