@@ -113,5 +113,9 @@ apptainer exec --nv deconwolf.sif dw --help
 ```
 
 
-
+### cleaning apptainer cache
+Apptainer cache can get full after making several containers, so run:
+```
+apptainer cache clean --force
+```
 
