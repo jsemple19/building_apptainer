@@ -85,9 +85,9 @@ If you want a container that can work with gpus you need to get it from [nvidia]
 
 ```
 Bootstrap: docker
-From: nvidia/cuda:13.2.0-cudnn-runtime-ubuntu24.04
+From: nvidia/cuda:13.2.0-cudnn-devel-ubuntu24.04
 ```
-
+Note: you need the devel version so that commands like nvcc --version work
 Try asking microsoft copilot to create def for you based on installation instructions. 
 
 ### convert build container from .def file
