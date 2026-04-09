@@ -20,14 +20,19 @@ The following instructions are for building containers on a mac.
   - Boot from ISO image (the Ubuntu file you downloaded),
   - Storage space: 40-64Gb
   - Add a shared directory: this allows you to transfer files in and out of the VM
-  - Enable OpenSSH server
-  - Create a username and password
+
 ![creating UTM VM](/UMT_UbuntuArchVMsetup.png)
 
-5. When finished - reboot. You might find that reboot just starts the installation all over again, in which case in UTM click on the VM, and then click on the button at the top right (edit VM) and disconnect the .iso file from the drives.
+5. When finished, start the VM and this will boot and install ubuntu server. during installation you will be asked some stuff like selecting language/keyboard etc. Make sure to:
+  - Set a Network connection
+  - No need for proxy
+  - Configure storage layout as an entire disk (i.e. keep default suggestion)
+  - Create a username and password
+  - Install OpenSSH server. you can import your ssh keys from github if you like.
+7. When finished - reboot. When you reboot, make sure to choose the option to "boot from next volume", otherwise you start the installation over again. You can disconnect the iso image in UTM by clicking on the VM, and then click on the button at the top right (edit VM) and disconnect the .iso file from the drives.
 ![UMT drive disconnect](/UMT_driveImage.png)
-7. to turn off the VM, type `sudo poweroff`.
-8. you want to allow clipboard sharing (only in emulate and not virtualize mode) so you can cut and paste commands from outside the VM. Setting it up didn't work for me but you can ssh into the VM from a mac terminal, and this allows you to copy paste.
+8. to turn off the VM, type `poweroff`.
+9. you want to allow clipboard sharing (only in emulate and not virtualize mode) so you can cut and paste commands from outside the VM. Setting it up didn't work for me but you can ssh into the VM from a mac terminal, and this allows you to copy paste.
 
 ### sharing clipboard with VM
 Make sure that sharing clipboard is enabled by closing your VM, and choosing edit at the top right courner of UMT. Choose Sharing from the menu.
